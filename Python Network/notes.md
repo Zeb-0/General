@@ -133,3 +133,21 @@ HTTP/1.1 200 OK
 HTTP/1.0 404 Not Found
 HTTP/1.1 403 Forbidden
 ```
+
+### Response Headers
+The response headers are in the form `name:value` pairs:
+
+***Syntax:***
+```
+response-header-name: response-header-value1, response-header-value2, ...
+```
+
+***Examples of response headers are:***
+```
+Content-Type: text/html
+Content-Length: 35
+Connection: Keep-Alive
+Keep-Alive: timeout=15, max=100
+```
+
+**The response message body contains the resource data requested.**
