@@ -32,3 +32,11 @@ A URL (Uniform Resource Locator) is used to uniquely identify a resource over th
 - `Hostname`: The DNS domain name (e.g., www.nowhere123.com) or IP address (e.g., 192.128.1.2) of the server.
 - `Port`: The `TCP` port number that the server is `listening` for incoming requests from the clients.
 - `Path-and-file-name`: The name and location of the requested resource, under the server document base directory.
+
+### HTTP Protocol
+It receives the `request message` from the brouswer and sends it to the server.  
+When Idle it listens to IP addresse(s) and port(s) in the specified configuration for incoming requests.  
+The `request message` when it reaches the server:
+- interprets, maps to `file`, returns to client,
+- interprets, maps to `program`, executes, return output to client,
+- returns error if request can't be satisfied.
