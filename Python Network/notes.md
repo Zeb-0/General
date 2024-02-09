@@ -151,3 +151,6 @@ Keep-Alive: timeout=15, max=100
 ```
 
 **The response message body contains the resource data requested.**
+
+## NB
+Read more under the resources. 
