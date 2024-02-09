@@ -85,4 +85,16 @@ POST /index.html HTTP/1.1
 ```
 
 **2. Request Headers:**
-- 
+- are in the form of name:value pairs - Multiple values, separated by commas, can be specified.
+
+***Syntax:**
+```request-header-name: request-header-value1, request-header-value2, ...
+```
+
+***Example:***
+```
+Host: www.xyz.com
+Connection: Keep-Alive
+Accept: image/gif, image/jpeg, */*
+Accept-Language: us-en, fr, cn
+```
