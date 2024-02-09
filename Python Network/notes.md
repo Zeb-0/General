@@ -13,3 +13,10 @@
     * The server then returns a response message - `pushes`
 - An HTTP request is a stateless protocol - current is unaware of prev requests.
 - It permits data-type negotiation & representation - systems can be built independently of the data being transferred.
+
+### Browser
+Receives URL reuest:
+- turns it into a `request message`,
+- sends it to `HTTP`,
+- `HTTP` interprets the `request message`,
+- `HTTP` then returns an appropriate `response message` - could be requested resource or an error.
