@@ -43,4 +43,6 @@ The `request message` when it reaches the server:
 
 ## HTTP over TCP/IP
 HTTP is a client-server application-level protocol. It typically runs over a TCP/IP connection. It only presumes a reliable transport. Any transport protocols that provide such guarantees can be used.
+
 ### IP
+Is a network-layer protocol, deals with network addressing and routing machines for communication.
