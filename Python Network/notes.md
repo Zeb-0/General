@@ -59,3 +59,8 @@ The original version, HTTP/0.9 (1991), written by Tim Berners-Lee, is a simple p
 
 ## Apache HTTP Server or Apache Tomcat Server
 is needed to study the HTTP protocol.
+
+## HTTP Request and Response Messages
+HTTP client and server communicate by sending text messages. The client sends a request message to the server.  The server, in turn, returns a response message.
+
+An HTTP message consists of a message header and an optional message body, separated by a blank line
