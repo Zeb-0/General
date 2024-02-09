@@ -6,7 +6,7 @@
 - [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 
 
-### [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
+## [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 
 - Is an asymmetric ***request-response*** protocol
     * An HTTP client sends a request to the server - `pulls`
@@ -14,7 +14,7 @@
 - An HTTP request is a stateless protocol - current is unaware of prev requests.
 - It permits data-type negotiation & representation - systems can be built independently of the data being transferred.
 
-### Browser
+## Browser
 Receives URL reuest:
 - turns it into a `request message`,
 - sends it to `HTTP`,
@@ -22,7 +22,7 @@ Receives URL reuest:
 - `HTTP` then returns an appropriate `response message` - could be requested resource or an error.
 - browser then formats the `response message` and displays it to `user`.
 
-### Uniform Resource Locator (URL)
+## Uniform Resource Locator (URL)
 A URL (Uniform Resource Locator) is used to uniquely identify a resource over the web. URL has the following syntax:
 
 `protocol://hostname:port/path-and-file-name`
@@ -33,10 +33,14 @@ A URL (Uniform Resource Locator) is used to uniquely identify a resource over th
 - `Port`: The `TCP` port number that the server is `listening` for incoming requests from the clients.
 - `Path-and-file-name`: The name and location of the requested resource, under the server document base directory.
 
-### HTTP Protocol
+## HTTP Protocol
 It receives the `request message` from the brouswer and sends it to the server.  
 When Idle it listens to IP addresse(s) and port(s) in the specified configuration for incoming requests.  
 The `request message` when it reaches the server:
 - interprets, maps to `file`, returns to client,
 - interprets, maps to `program`, executes, return output to client,
 - returns error if request can't be satisfied.
+
+## HTTP over TCP/IP
+HTTP is a client-server application-level protocol. It typically runs over a TCP/IP connection. It only presumes a reliable transport. Any transport protocols that provide such guarantees can be used.
+### IP
