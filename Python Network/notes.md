@@ -70,3 +70,19 @@ Consists of:
 - request line
 - request Headers
 - requestmessage - optional
+
+**1. Request line:**
+***Syntax:***
+```request-method-name request-URI HTTP-version```
+
+- Request-method-name - are rquest methods like: `GET`, `POST`, `HEAD` & `OPTIONS`.  
+
+***Example:***
+```
+GET /test.html HTTP/1.1
+HEAD /query.html HTTP/1.0
+POST /index.html HTTP/1.1
+```
+
+**2. Request Headers:**
+- 
