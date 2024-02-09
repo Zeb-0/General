@@ -20,3 +20,4 @@ Receives URL reuest:
 - sends it to `HTTP`,
 - `HTTP` interprets the `request message`,
 - `HTTP` then returns an appropriate `response message` - could be requested resource or an error.
+- browser then formats the `response message` and displays it to `user`.
