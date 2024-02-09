@@ -46,3 +46,7 @@ HTTP is a client-server application-level protocol. It typically runs over a TCP
 
 ### IP
 Is a network-layer protocol, deals with network addressing and routing machines for communication.
+
+### TCP (Transmission Control Protocol)
+Is transport-layer protocol, responsible for establish a connection between two machines.  
+TCP consists of 2 protocols: TCP and UDP (User Datagram Package).
