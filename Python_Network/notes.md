@@ -73,9 +73,10 @@ Consists of:
 
 **1. Request line:**
 ***Syntax:***
+
 ```request-method-name request-URI HTTP-version```
 
-- Request-method-name - are rquest methods like: `GET`, `POST`, `HEAD` & `OPTIONS`.  
+**Request-method-name** - are rquest methods like: `GET`, `POST`, `HEAD` & `OPTIONS`.  
 
 ***Example:***
 ```
