@@ -21,3 +21,14 @@ Receives URL reuest:
 - `HTTP` interprets the `request message`,
 - `HTTP` then returns an appropriate `response message` - could be requested resource or an error.
 - browser then formats the `response message` and displays it to `user`.
+
+### Uniform Resource Locator (URL)
+A URL (Uniform Resource Locator) is used to uniquely identify a resource over the web. URL has the following syntax:
+
+`protocol://hostname:port/path-and-file-name`
+
+***There are 4 parts in a URL:***
+- `Protocol`: The application-level protocol used by the client and server, e.g., HTTP, FTP, and telnet.
+- `Hostname`: The DNS domain name (e.g., www.nowhere123.com) or IP address (e.g., 192.128.1.2) of the server.
+- `Port`: The `TCP` port number that the server is `listening` for incoming requests from the clients.
+- `Path-and-file-name`: The name and location of the requested resource, under the server document base directory.
