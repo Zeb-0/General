@@ -64,3 +64,9 @@ is needed to study the HTTP protocol.
 HTTP client and server communicate by sending text messages. The client sends a request message to the server.  The server, in turn, returns a response message.
 
 An HTTP message consists of a message header and an optional message body, separated by a blank line
+
+### HTTP Request message
+Consists of:
+- request line
+- request Headers
+- requestmessage - optional
