@@ -14,3 +14,8 @@ Write a Bash script that sends a `DELETE` request to the URL passed as the first
 - You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000.
+
+## 3. cURL only methods
+Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+You have to use `curl`
