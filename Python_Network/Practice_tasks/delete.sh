@@ -1,3 +1,3 @@
 # send a DELETE request to given URL.
 
-curl -X DELETE "$1" | wc -c
+curl -sX DELETE "$1"
