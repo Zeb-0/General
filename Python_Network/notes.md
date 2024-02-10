@@ -185,3 +185,6 @@ Cookies were once used for general client-side storage. While this made sense wh
 A `HEAD` request is similar to a `GET` request, but the server responds with only the response headers and not the response body. This can be useful when you're only interested in the metadata of the resource (such as headers like `"Allow", "Content-Type"`, etc.) and not the actual content itself.
 
 So when you use `curl -I`, it sends a `HEAD` request to the specified `URL`, and the server responds with only the `headers`, allowing you to inspect the metadata without downloading the entire response body.
+
+**Allow**
+Specifies the HTTP methods allowed on the requested resource.
