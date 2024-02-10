@@ -178,3 +178,10 @@ Recording and analyzing user behavior
 Cookies were once used for general client-side storage. While this made sense when they were the only way to store data on the client, modern storage APIs are now recommended. Cookies are sent with every request, so they can worsen performance (especially for mobile data connections). Modern APIs for client storage are the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) (localStorage and sessionStorage) and [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API).
 
 ### READ more [Resources]
+
+---
+
+# important notes:
+A `HEAD` request is similar to a `GET` request, but the server responds with only the response headers and not the response body. This can be useful when you're only interested in the metadata of the resource (such as headers like `"Allow", "Content-Type"`, etc.) and not the actual content itself.
+
+So when you use `curl -I`, it sends a `HEAD` request to the specified `URL`, and the server responds with only the `headers`, allowing you to inspect the metadata without downloading the entire response body.
