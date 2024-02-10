@@ -1,3 +1,4 @@
-# Display only body of a 200 status code response
+#!/bin/bash
+# Send GET request & display body of response message
 
-curl -sS "$1" | wc -c
+curl -sL "$1"
