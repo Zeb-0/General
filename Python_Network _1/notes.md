@@ -36,3 +36,17 @@ with urllib.request.urlopen("http://python.org/") as response:
 
 with open(tmp_file.name) as html:
     pass
+```
+---
+
+HTTP is based on requests and responses - the client makes requests and servers send responses. urllib.request mirrors this with a Request object which represents the HTTP request you are making. In its simplest form you create a Request object that specifies the URL you want to fetch. Calling urlopen with this Request object returns a response object for the URL requested. This response is a file-like object, which means you can for example call `.read()` on the response:
+
+
+```
+import urllib.request
+
+req = urllib.request.Request('http://python.org/')
+with urllib.request.urlopen(req) as response:
+   the_page = response.read()
+
+```
