@@ -70,3 +70,24 @@ req = urllib.request.Request(url, data)
 with urllib.request.urlopen(req) as response:
     the_page = response.read()
 ```
+### Use HTTP GET request
+URL Request will use a GET request if `data` is not passed as the argument.  
+You can pass data into HTTP GET request by directly encoding it in the URL.
+
+***Example:***
+```
+import urllib.parse
+import urllib.request
+
+data = {}
+data['name'] = 'Zeberio Morande'
+data['location'] = 'Nairobi'
+data['language'] = 'python'
+url_values = urllib.parse.urlencode(data)
+print(url_values)
+print()
+
+name=Zeberio+Morande&language=python&location=Nairobi
+url = 'http://www.example.com/example.cgi'
+full_url = url + '?' + url_values
+data = urllib.request.urlopen(full_url)
