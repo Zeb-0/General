@@ -52,3 +52,9 @@ Write a Bash script that sends a request to a URL passed as an argument, and dis
 - You are not allowed to use any pipe, redirection, etc.
 - You are not allowed to use `;` and `&&`
 - You have to use `curl`
+
+## 8. cURL a JSON file
+Write a Bash script that sends a `JSON` POST request to a URL passed as the first argument, and displays the body of the response.
+
+- Your script must send a `POST` request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
+- You have to use `curl`
