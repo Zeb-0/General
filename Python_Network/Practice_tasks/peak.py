@@ -6,5 +6,27 @@ def peak(nums):
         
     return None # no peak found
 
+'''Use binary search'''
+def find_peak(mylist):
+    '''check if list is empty'''
+    if not mylist:
+        return None
+    
+    '''binary algorithm'''
+    left = 0
+    right = len(mylist) - 1
+
+    while True:
+        mid = (left + right) // 2
+        if (mylist[mid] < mylist[mid + 1]):
+            left = mid + 1
+        else:
+            right = mid
+
+    return mylist[left]
+
+
 my_list = [23, 45, 67, 54, 87, 13]
 print("The Peak is: ", peak(my_list))
+print()
+print("Binary Peak is: ", find_peak(my_list))
