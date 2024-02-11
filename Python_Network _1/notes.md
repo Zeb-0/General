@@ -131,3 +131,6 @@ except urllib.error.URLError as e:
 (4, 'getaddinfo failed')
 ```
 
+### HTTPError
+These only occur between codes 400 - 599 range.  
+[Read more](https://docs.python.org/3/library/http.server.html#http.server.BaseHTTPRequestHandler.responses).
