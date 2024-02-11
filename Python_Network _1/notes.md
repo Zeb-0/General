@@ -114,3 +114,20 @@ req = urllib.reuest.Request(url, data, headers)
 with urllib.request.urlopen(req) as response:
     the_page = response.read()
 ```
+
+## Handling Exceptions
+urlopen raises [URLError](https://docs.python.org/3/library/urllib.error.html#urllib.error.URLError) when it cannot handle a response.
+
+### URLError
+Raised incse of no `network connection` or Server doesn't exist.  
+The exception raised has a `reason` atribute - tuple with (error code, text error message).
+
+***Example:***
+```
+req = urllib.request.Request('http://www.pretend_server.org')
+try: urllib.request.urlopen(req)
+except urllib.error.URLError as e:
+    print(e.reason)
+(4, 'getaddinfo failed')
+```
+
