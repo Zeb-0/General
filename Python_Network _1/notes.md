@@ -50,3 +50,23 @@ with urllib.request.urlopen(req) as response:
    the_page = response.read()
 
 ```
+
+## Data
+Sometimes you want to send data to a URL (often the URL will refer to a CGI (Common Gateway Interface) script or other web application). With HTTP, this is often done using what’s known as a POST request. This is often what your browser does when you submit a HTML form that you filled in on the web. Not all POSTs have to come from forms: you can use a POST to transmit arbitrary data to your own application. In the common case of HTML forms, the data needs to be encoded in a standard way, and then passed to the Request object as the data argument. The encoding is done using a function from the [urllib.parse](https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse) library.
+
+***Example:***  
+```
+import urllib.parse
+import urllib.request
+
+url = 'http://www.someserver.com/cgi-bin/register.cgi'
+values = {'Name' : 'Zeberio Morande',
+'locatio' : 'Nairobi',
+'language': 'Python'}
+
+data = urllib.parse.urlencode(values)
+data = data.encode('ascii')
+req = urllib.request.Request(url, data)
+with urllib.request.urlopen(req) as response:
+    the_page = response.read()
+```
