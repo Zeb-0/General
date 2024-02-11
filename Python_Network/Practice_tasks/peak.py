@@ -1,7 +1,7 @@
 def peak(nums):
     for i in range(len(nums)):
         # check if current element is geater or equal to neighbors
-        if (i == 0 or nums[i] >= nums[i - 1]) and (i == len(nums[i] - 1) or nums[i] >= nums[i + 1]):
+        if (i == 0 or nums[i] >= nums[i - 1]) and (i == len(nums) - 1 or nums[i] >= nums[i + 1]):
             return nums[i]  # found peak
         
     return None # no peak found
