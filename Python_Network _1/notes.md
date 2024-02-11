@@ -146,3 +146,44 @@ except urllib.error.HTTPError as e:
     print(e.code)
     print(e.read())
 ```
+
+when dealing with these errors you can use:
+
+**Approach 1:**
+```
+from urllib.request import Request urlopen
+from urllib.error import URLError HTTPError
+
+req = Request(someurl)
+try:
+    response = urlopen(req)
+except HTTPError as e:
+    print('The server couldn\'t fulfill the request.')
+    print('Error code: ', e.code)
+except URLError as e:
+    print('We failed to reach a server.')
+    print('Reason: ', e.reason)
+
+else:
+    # all good
+
+```
+
+**Approach 2:**
+```
+from urllib.request import Request, urlopen
+from urllib.error import URLError
+
+req = Request(someurl)
+try:
+    response = urlopen(req)
+except URLError as e:
+    if hasatt(e, 'reason'):
+        print('We failed to reach a server')
+        print('reason: ', e.reason)
+    elif hasattr(e, 'code'):
+        print('The server couldn\'t fulfill the request.')
+        print('Error code: ', e.code)
+    else:
+        # all good
+```
