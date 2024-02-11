@@ -99,3 +99,18 @@ You can pass a dictionary of headers into the `Request object` when creating it.
 ```
 import urllib.parse
 import urllib.request
+
+url = 'http://www.someserver.com/cgi-bin/register.cgi'
+user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)'
+values = {'Name' : 'Zeberio Morande',
+'locatio' : 'Nairobi',
+'language': 'Python'}
+
+headers = {'user_agent': user_agent}
+
+data = urllib.parse.urlencode(values)
+data = data.encode('ascii')
+req = urllib.reuest.Request(url, data, headers)
+with urllib.request.urlopen(req) as response:
+    the_page = response.read()
+```
