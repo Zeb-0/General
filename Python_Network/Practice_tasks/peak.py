@@ -30,3 +30,4 @@ my_list = [23, 45, 67, 54, 87, 13]
 print("The Peak is: ", peak(my_list))
 print()
 print("Binary Peak is: ", find_peak(my_list))
+print()
