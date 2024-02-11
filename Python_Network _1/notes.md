@@ -134,3 +134,15 @@ except urllib.error.URLError as e:
 ### HTTPError
 These only occur between codes 400 - 599 range.  
 [Read more](https://docs.python.org/3/library/http.server.html#http.server.BaseHTTPRequestHandler.responses).
+
+When an error is raised, the server responds by sending an error code and an error page.  
+You can use the HTTPError instance as a response on the page returned. This means that as well as the code attribute, it also has read, geturl, and info, methods as returned by the `urllib.response` module:
+
+***Example:***
+```
+req = urllib.request.Request('http://www.python.org/fish.html')
+try: urllib.request.urlopen(req)
+except urllib.error.HTTPError as e:
+    print(e.code)
+    print(e.read())
+```
