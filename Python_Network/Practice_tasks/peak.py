@@ -16,7 +16,7 @@ def find_peak(mylist):
     left = 0
     right = len(mylist) - 1
 
-    while True:
+    while left < right:
         mid = (left + right) // 2
         if (mylist[mid] < mylist[mid + 1]):
             left = mid + 1
