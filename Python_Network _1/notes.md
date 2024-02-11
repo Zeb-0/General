@@ -91,3 +91,11 @@ name=Zeberio+Morande&language=python&location=Nairobi
 url = 'http://www.example.com/example.cgi'
 full_url = url + '?' + url_values
 data = urllib.request.urlopen(full_url)
+```
+
+## Headers
+A browser identifies itself through the `user-agent` header.  
+You can pass a dictionary of headers into the `Request object` when creating it. See below:
+```
+import urllib.parse
+import urllib.request
