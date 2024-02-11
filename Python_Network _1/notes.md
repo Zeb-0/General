@@ -196,3 +196,8 @@ geturl - this returns the real URL of the page fetched. This is useful because `
 info - this returns a dictionary-like object that describes the page fetched, particularly the headers sent by the server. It is currently an [http.client.HTTPMessage](https://docs.python.org/3/library/urllib.request.html#module-urllib.response) instance.
 
 Typical headers include ‘Content-length’, ‘Content-type’, and so on. See the [Quick Reference to HTTP Headers](https://jkorpela.fi/http.html) for a useful listing of HTTP headers with brief explanations of their meaning and use.
+
+## Refer to resources for more on:
+- Openers and Handlers
+- Basic Authentication
+- Proxies
