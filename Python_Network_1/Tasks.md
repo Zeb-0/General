@@ -31,3 +31,9 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 - You are not allowed to import other packages than `urllib` and `sys`
 - You don’t need to check arguments passed to the script (number or type)
 - You must use the `with` statement
+
+## 4. What's my status? #1
+Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
+- You must use the package `requests`
+- You are not allow to import packages other than `requests`
+- The body of the response must be display like the following example (tabulation before `-`)
