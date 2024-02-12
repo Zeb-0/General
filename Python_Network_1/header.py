@@ -1,4 +1,4 @@
-#!/usr/bin/python
+'''#!/usr/bin/python'''
 '''displays the value of the X-Request-Id variable found in the header of the response.'''
 
 import sys
