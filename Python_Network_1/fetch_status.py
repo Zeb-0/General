@@ -1,5 +1,8 @@
 '''#!/usr/bin/python'''
-'''fetch https://alx-intranet.hbtn.io/status'''
+'''
+fetch https://alx-intranet.hbtn.io/status
+Usage: ./5-hbtn_header.py <URL>
+'''
 import requests
 
 
