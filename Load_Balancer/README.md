@@ -27,3 +27,9 @@ This consequently increases reliability, efficiency and availability of your ent
  - Weighted scheduling
  - Round Robin scheduling
  - Least connection first scheduling
+
+ ### Weighted scheduling algo.
+ Work is assigned to the server according to the weight assigned to that server.  
+ The balaner calculates the % of the traffic to be sent to a particular server.
+
+ This algo is used when there is a `considerable difference in capabilities and specs` of different servers in the cluster.
