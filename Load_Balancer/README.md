@@ -14,3 +14,16 @@ This consequently increases reliability, efficiency and availability of your ent
 - [Introduction to load-balancing and HAproxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
 - [HTTPHeader](https://www.techopedia.com/definition/27178/http-header)
 - [Debian/Ubuntu HAProxy packages](https://haproxy.debian.net/#distribution=Ubuntu&release=focal&version=2.8)
+---
+
+**TYpes of loade Balancers:**
+- There are 2 types:
+ * `Software load balancers`
+ * `Hardware load balancers`
+
+ ## Software Load Balncer
+ It implements a combination of one or more scheduling algorithms.  
+ The mostly used ones include:
+ - Weighted scheduling
+ - Round Robin scheduling
+ - Least connection first scheduling
