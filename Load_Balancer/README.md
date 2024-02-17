@@ -33,3 +33,8 @@ This consequently increases reliability, efficiency and availability of your ent
  The balaner calculates the % of the traffic to be sent to a particular server.
 
  This algo is used when there is a `considerable difference in capabilities and specs` of different servers in the cluster.
+
+ ### Round Robin scheduling
+ Requests are sent to sever sequentially one after the other.
+
+ Useful when the servers are of `equal specs`
