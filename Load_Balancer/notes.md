@@ -54,3 +54,9 @@ This consequently increases reliability, efficiency and availability of your ent
 - Varnish – A reverse proxy based load balancer.
 - Balance – Open source TCP load balancer.
 - LVS – Linux virtual server offering layer 4 load balancing
+
+---
+
+## Hardware Load Balancers
+Are often referred to as `specialized routers or switches` deployed btw servers and the cient.   
+Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of the OSI model
