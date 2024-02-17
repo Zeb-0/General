@@ -45,3 +45,12 @@ This consequently increases reliability, efficiency and availability of your ent
  When we have large number of persistent connections in the traffic unevenly distributed between the servers. It is often coupled with Sticky Session or Session aware load balancing. In this, all the request related to a session is sent to the same server to maintain the session state and syncronization.
 
  This approach is used when we have` session aware write operations in sync with client and the server` so that it avoids any inconsistency.
+
+ ### Software Load Balancer Examples
+**The following are few examples of software load balancers:**
+- [HAProxy](https://www.haproxy.org/) – A TCP load balancer.
+- [NGINX](https://www.nginx.com/resources/wiki/) – A http load balancer with SSL termination support. (install Nginx on Linux)
+- [mod_athena](https://ath.sourceforge.net/mod_athena_doc/html/index.html) – Apache based http load balancer.
+- Varnish – A reverse proxy based load balancer.
+- Balance – Open source TCP load balancer.
+- LVS – Linux virtual server offering layer 4 load balancing
