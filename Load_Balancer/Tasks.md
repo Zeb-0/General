@@ -17,9 +17,9 @@ Requirements:
   - The value of the custom HTTP header must be the hostname of the server Nginx is running on
 - Write `0-custom_http_response_header` so that it configures a brand new Ubuntu machine to the requirements asked in this task
   - [ignore SC2154 for shellcheck](https://github.com/koalaman/shellcheck/wiki/SC2154)
- ```
-Example:
-`
+
+***Example:***
+```
 sylvain@ubuntu$ curl -sI 34.198.248.145 | grep X-Served-By
 X-Served-By: 03-web-01
 sylvain@ubuntu$ curl -sI 54.89.38.100 | grep X-Served-By
