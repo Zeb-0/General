@@ -6,9 +6,7 @@ HTTP header
 Debian/Ubuntu HAProxy packages
 
 # Tasks
-0. Double the number of webservers
-mandatory
-Score: 33.33% (Checks completed: 33.33%)
+## 0. Double the number of webservers
 In this first task you need to configure web-02 to be identical to web-01. Fortunately, you built a Bash script during your web server project, and they’ll now come in handy to easily configure web-02. Remember, always try to automate your work!
 
 Since we’re placing our web servers behind a load balancer for this project, we want to add a custom Nginx response header. The goal here is to be able to track which web server is answering our HTTP requests, to understand and track the way a load balancer works. More in the coming tasks.
@@ -37,7 +35,7 @@ Requirements:
 Configure HAproxy so that it send traffic to `web-01` and `web-02.`
 Distribute requests using a roundrobin algorithm
 Make sure that HAproxy can be managed via an init script
-Make sure that your servers are configured with the right hostnames: `[STUDENT_ID]-web-01` and `[STUDENT_ID]-web-02`. If not, follow this [tutorial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-hostname.html).
+Make sure that your servers are configured with the right hostnames: `[STUDENT_ID]-web-01` and `[STUDENT_ID]-web-02`. If not, follow this [tutorial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-hostname.html ).
 For your answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements
 
 ## 2. Add a custom HTTP header with Puppet
