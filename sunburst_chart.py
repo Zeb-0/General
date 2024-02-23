@@ -4,7 +4,7 @@ import plotly.express as px
 data = {
     'id': ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
     'parent': ['', 'A', 'A', 'B', 'B', 'C', 'D'],
-    'value': [20, 12, 7, 17, 33, 27]
+    'value': [20, 12, 7, 17, 33, 27, 18]
 }
 
 '''Create the Sunburst chart'''
