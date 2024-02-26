@@ -85,4 +85,10 @@ Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of
 More servers increases potential load capacity.  
 **Example of a two backend configuration of 2 web servers each listening to `port 80`
 
-1. 
+**1. web backend:**
+```
+backend web backend
+    balance roundrobin
+    server web1 web1.yourdomain.com:80 check
+    server web2 web2.yourdomain.com:80 check
+```
