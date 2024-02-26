@@ -69,3 +69,7 @@ Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of
 - `HAProxy` - refers to `High Availabilty Proxy`
 - is a popular open source software TCP/HTTP Load balancer and proxying solution.
 - commonly used to improve server environment perfomance & reliability by distirbuting workload across multiple servers.
+
+### Access Control List (ACLs)
+- are used to test a condition and perfom an action based on the test results.
+     * the condition could be for example selecting a sever of blocking  a request.
