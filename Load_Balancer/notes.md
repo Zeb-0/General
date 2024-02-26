@@ -71,5 +71,7 @@ Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of
 - commonly used to improve server environment perfomance & reliability by distirbuting workload across multiple servers.
 
 ### Access Control List (ACLs)
-- are used to test a condition and perfom an action based on the test results.
-     * the condition could be for example selecting a sever of blocking  a request.
+- are used to test some condition and perfom an action based on the test results.
+     * the condition could be for example selecting a sever of blocking  a request
+
+- Using `ACLs` allows flexible network traffic forwarding based on a variety of factors like pattern-matching and number of connections to a backend.
