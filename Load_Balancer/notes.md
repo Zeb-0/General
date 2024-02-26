@@ -92,3 +92,11 @@ backend web-backend
     server web1 web1.yourdomain.com:80 check
     server web2 web2.yourdomain.com:80 check
 ```
+**2. Blog-backend:**
+```
+backend blog-backend
+    balance roundrobin
+    mode http
+    server blog1 blog1.yourdomain.com:80 check
+    server blog1 blog1.yourdomain.com:80 check
+```
