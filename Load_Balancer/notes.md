@@ -60,3 +60,12 @@ This consequently increases reliability, efficiency and availability of your ent
 ## Hardware Load Balancers
 Are often referred to as `specialized routers or switches` deployed btw servers and the cient.   
 Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of the OSI model
+
+
+
+---
+
+## Introduction to HAPxoxy & Load Balancing.
+- `HAProxy` - refers to `High Availabilty Proxy`
+- is a popular open source software TCP/HTTP Load balancer and proxying solution.
+- commonly used to improve server environment perfomance & reliability by distirbuting workload across multiple servers.
