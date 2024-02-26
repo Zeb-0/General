@@ -81,3 +81,8 @@ Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of
 - Basically can be defined by:
     * load balancing algo to use
     * lis of servers and ports
+
+More servers increases potential load capacity.  
+**Example of a two backend configuration of 2 web servers each listening to `port 80`
+
+1. 
