@@ -75,3 +75,9 @@ Are implemented btw `Layer4`(transport layer) and `Layer7`(application layer) of
      * the condition could be for example selecting a sever of blocking  a request
 
 - Using `ACLs` allows flexible network traffic forwarding based on a variety of factors like pattern-matching and number of connections to a backend.
+
+### Backend
+- A Backend is a set of servers that receive forwarded requests.
+- Basically can be defined by:
+    * load balancing algo to use
+    * lis of servers and ports
