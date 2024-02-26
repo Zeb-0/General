@@ -1,9 +1,9 @@
 # Resources
 Read or watch:
 
-Introduction to load-balancing and HAproxy
-HTTP header
-Debian/Ubuntu HAProxy packages
+- [Introduction to load-balancing and HAproxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
+- [HTTP header](https://www.techopedia.com/definition/27178/http-header)
+- [Debian/Ubuntu HAProxy packages](https://haproxy.debian.net/)
 
 # Tasks
 ## 0. Double the number of webservers
@@ -11,7 +11,7 @@ In this first task you need to configure `web-02` to be identical to `web-01`. F
 
 Since we’re placing our web servers behind a load balancer for this project, we want to add a custom Nginx response header. The goal here is to be able to track which web server is answering our HTTP requests, to understand and track the way a load balancer works. More in the coming tasks.
 
-Requirements:
+**Requirements:**
 - Configure Nginx so that its HTTP response contains a custom header (on `web-01` and `web-02`)
   - The name of the custom HTTP header must be `X-Served-By`
   - The value of the custom HTTP header must be the hostname of the server Nginx is running on
