@@ -2,7 +2,7 @@
 When you have an enterprise or website that gets a lot of hits, you may run into an overload problem. In that case you will need to distribute the load across multiple servers.  
 This is where a load balancer comes in handy.
 
-The Load balancer will distribute the workload across multiple individual systems or group of systems thus reducing the amount of worl load on an individual system.
+The Load balancer will distribute the workload across multiple individual systems or group of systems thus reducing the amount of work load on an individual system.
 
 This consequently increases reliability, efficiency and availability of your enterprise APP.
 ---
@@ -30,7 +30,7 @@ This consequently increases reliability, efficiency and availability of your ent
 
  ### Weighted scheduling algo.
  Work is assigned to the server according to the weight assigned to that server.  
- The balaner calculates the % of the traffic to be sent to a particular server.
+ The balancer calculates the % of the traffic to be sent to a particular server.
 
  This algo is used when there is a `considerable difference in capabilities and specs` of different servers in the cluster.
 
