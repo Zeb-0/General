@@ -100,3 +100,11 @@ backend blog-backend
     server blog1 blog1.yourdomain.com:80 check
     server blog1 blog1.yourdomain.com:80 check
 ```
+
+### Frontend
+- define how requests should be forwarded to the backends
+- their definitions are comprised of the following:
+    * a set of IP addresses and a port (e.g. 10.1.1.7:80, *:443, etc.)
+    * ACLs
+    * `Use_backend` rules - define which backends touse depending on which ACL conditions are matched.
+    * `Default_backend` rule - handles every other cases
