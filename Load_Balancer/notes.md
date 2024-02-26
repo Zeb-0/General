@@ -108,3 +108,17 @@ backend blog-backend
     * ACLs
     * `Use_backend` rules - define which backends touse depending on which ACL conditions are matched.
     * `Default_backend` rule - handles every other cases
+
+## Types of Load Balancing
+- No Load balancing
+- Layer 4 Load Balancing
+- Layer 7 Load Balancing
+
+### nO Load Balancing
+User connects directly via `yourdomain.com` to the server withouth any load balancing.  
+If your server goes down so does everything.
+
+### Layer 4 Load Balancing
+Also `transport layer`  
+User traffic is forwarded based on the ip range and port  
+The user accesses the load balancer, which forwards the user’s request to the web-backend group of backend servers. Whichever backend server is selected will respond directly to the user’s request. Generally, all of the servers in the web-backend should be serving identical content–otherwise the user might receive inconsistent content. Note that both web servers connect to the same database server.
